@@ -1,0 +1,11 @@
+Calendar:
+DECLARE FIELD DEFINITION TAGGED '$date'
+   Parameters
+      first_month_of_year = 1
+   Fields
+      Year($1) As Year Tagged ('$numeric'),
+      Month($1) as Month Tagged ('$numeric'),
+      Date($1) as Date Tagged ('$date'),
+      Week($1) as Week Tagged ('$numeric'),
+      Weekday($1) as Weekday Tagged ('$numeric'),
+      DayNumberOfYear($1, first_month_of_year) as DayNumberOfYear Tagged ('$numeric');
