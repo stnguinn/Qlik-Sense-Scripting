@@ -1,0 +1,34 @@
+1. Rename Fields
+
+You can rename one or more fields in either table so that the field names are not identical. This can be done using the AS keyword in the data load script.
+
+qlik
+
+LOAD Field1 AS NewField1, Field2 AS NewField2 FROM [DataSource1];
+LOAD Field1, Field2 FROM [DataSource2];
+
+2. Use the NOCONCATENATE Prefix
+
+You can use the NOCONCATENATE prefix before the LOAD or SELECT statement to prevent automatic concatenation.
+
+qlik
+
+NOCONCATENATE LOAD Field1, Field2 FROM [DataSource1];
+
+3. Qualify Fields
+
+You can use the QUALIFY statement to add table name prefixes to field names, making them unique.
+
+qlik
+
+QUALIFY *;
+LOAD Field1, Field2 FROM [DataSource1];
+UNQUALIFY *;
+
+4. Use Concatenate Explicitly
+
+If you want to concatenate tables selectively, you can use the CONCATENATE keyword explicitly to control the behavior.
+
+qlik
+
+CONCATENATE (Table1) LOAD Field1, Field2 FROM [DataSource2];
