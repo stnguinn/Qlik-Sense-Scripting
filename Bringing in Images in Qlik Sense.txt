@@ -1,0 +1,50 @@
+
+1. Shared Content library: https://help.qlik.com/en-US/sense-admin/February2023/Subsystems/DeployAdministerQSE/Content/Sense_DeployAdminister/QSEoW/Administer_QSEoW/Managing_QSEoW/content-libraries-overview.htm
+Viable option/possibly a memory issue depending on file sizes and access/security issues?
+
+
+??2.How to pass restful query parameters dynamically to restful call <https://community.qlik.com/t5/New-to-Qlik-Sense/How-to-pass-restful-query-parameters-dynamically-to-restful-call/td-p/1290849 
+
+3. Adding images to a straight table - Qlik Sense <https://www.youtube.com/watch?v=oWchTf46jmw
+(Access denied You tube video)Viable option/need to be abale to reach image by URL/Is this ability turned off by security policy/MDA? 
+
+4. Adding images to tooltips - Qlik Sense <https://help.qlik.com/en-US/video/cthATXt2g-I
+(Video Blocked)Viable option/need to be able to reach the image by URL/Is this ability turned off by security policy/ MDA?  
+
+??5.(Uses Qlik Sense extension "Simple Image") Qlik Sense: Display image dynamically <https://community.qlik.com/t5/App-Development/QlikSense-Display-image-dynamically/m-p/1243556/highlight/true#M24757
+Do we have access to this extension/ or repository, Git lab or local folder? 
+
+
+Qlik Sense Steps
+To incorporate a .PNG image into Qlik Sense, follow these steps:
+
+   1. Prepare the Image:
+    Ensure that the .PNG image is saved in a location accessible to Qlik Sense.
+
+    2.Open Qlik Sense Desktop or Qlik Sense Hub:
+    Launch Qlik Sense Desktop or access the Qlik Sense Hub, depending on your workflow.
+
+    3. Create a New Sheet or Open an Existing One:
+    Open the Qlik Sense app where you want to add the image. Create a new sheet or navigate to an existing sheet.
+
+    4, Add a Text & Image Object:
+        Drag and drop a "Text & Image" object from the assets panel onto the sheet.
+
+    5. Configure the Text & Image Object:
+        Double-click on the added "Text & Image" object to open the properties panel.
+        In the properties panel, go to the "Image" tab.
+
+    6. Link to the Image:
+        Under the "Image" tab, find the "Link" section.
+        Input the URL or local path to the .PNG image in the "Link" field.
+
+    7. Adjust Size and Position (Optional):
+        You can adjust the size and position of the image within the object using the options available in the properties panel.
+
+    8. Apply Changes:
+        Click "Apply" or "OK" to save the changes to the properties.
+
+    9. Preview and Save:
+        Preview the sheet to ensure that the image is displayed correctly.
+        Save the Qlik Sense app to retain the changes.
+
