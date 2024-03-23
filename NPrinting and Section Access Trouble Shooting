@@ -1,0 +1,15 @@
+NPrinting needs to reload metadata from Qlik Sense apps to generate reports. If Section Access is applied, there are a few points to consider:
+
+    Service Account Permissions: Ensure that the service account used by NPrinting has the necessary permissions in Section Access. This account needs access rights similar to those of an admin or a user with complete access to the app data.
+
+    Section Access Script: Verify that the Section Access script in Qlik Sense is correctly configured. It should include the NPrinting service account with appropriate access levels.
+
+    Data Reduction: If Section Access reduces data for the NPrinting service account, it may not be able to see all the necessary data, leading to metadata reload errors.
+
+    Connection Configuration: In NPrinting, when setting up the connection to a Qlik Sense app with Section Access, you must specify credentials that have the necessary access in the Section Access setup of the Qlik Sense app.
+
+    Latest Versions: Ensure both Qlik Sense and NPrinting are updated to their latest versions, as there could be bug fixes or improvements related to Section Access handling.
+
+    Logging and Error Messages: Check NPrinting and Qlik Sense logs for any specific error messages that occur during the metadata reload. These messages can provide more insight into the nature of the problem.
+
+    Testing Without Section Access: As a troubleshooting step, try reloading metadata without Section Access applied to confirm if the issue is directly related to Section Access.
